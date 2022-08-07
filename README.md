@@ -7,3 +7,8 @@ A super simple cli based utility that can track the price of BTC-USD (via the [c
 The params `bucket` and `interval` control the number of datapoints to display on stdout at any given time, and the refresh-interval for fetching the latest price respectively.
 
 ![Command screenshot](screenshot.png)
+
+Minimum requirement: Go 1.18
+
+## Small highlights:
+- The queue (holding the btc values) is implemented as a singly list which uses generics (thus the min Go requirement).
